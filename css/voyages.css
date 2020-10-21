@@ -1,0 +1,148 @@
+/* *{
+	border: 1px solid black;
+} */
+
+html, body{
+	margin: 0;
+	width: 100vw;
+}
+
+header{
+	width: 100%;
+	height: 10vh;
+	background-color: blue;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+
+header h1{
+	margin: 0;
+}
+
+.accueil{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.accueil .carte{
+	height: 540px;
+	width: 900px;
+	/* width: 100%; */
+	position: relative;
+}
+
+.carte .map_bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	object-fit: scale-down;
+	z-index: 1;
+}
+
+.continent{
+	position: absolute;
+	filter: hue-rotate(0deg);
+	-webkit-filter: hue-rotate(0deg);
+	opacity: 0;
+	transition: visibility 0.3s linear,
+				opacity 0.3s linear,
+				filter 0.3s linear,
+				left 0.3s ease,
+				top 0.3s ease;
+}
+
+.continent:hover{
+	visibility: visible;
+	opacity: 1;
+	filter: hue-rotate(120deg);
+	-webkit-filter: hue-rotate(120deg);
+}
+
+.afrique{
+	width: 25%;
+	left: 349px;
+	top: 194px;
+	z-index: 2;
+	height: auto;
+	object-fit: scale-down;
+}
+
+.afrique:hover{
+	left: 360px;
+	top: 200px;
+	z-index: 2;
+}
+
+.europe{
+	width: 22%;
+	left: 375px;
+	top: 90px;
+	z-index: 2;
+	height: auto;
+	object-fit: scale-down;
+}
+
+.europe:hover{
+	left: 380px;
+	top: 80px;
+	z-index: 4;
+}
+
+.asie{
+	width: 41%;
+	left: 486px;
+	top: 90px;
+	z-index: 2;
+	height: auto;
+	object-fit: scale-down;
+}
+
+.asie:hover{
+	left: 510px;
+	top: 85px;
+	z-index: 4;
+}
+
+.oceanie{
+	width: 21%;
+	left: 690px;
+	top: 342px;
+	z-index: 2;
+	height: auto;
+	object-fit: scale-down;
+}
+
+.oceanie:hover{
+	left: 720px;
+	top: 358px;
+	z-index: 4;
+}
+
+.amerique{
+	width: 45%;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	height: auto;
+	object-fit: scale-down;
+}
+
+.amerique:hover{
+	left: -10px;
+	top: -6px;
+	z-index: 4;
+}
+
+.aicha{
+	position: absolute;
+	z-index: 3;
+	height: 20px;
+	top 200px;
+}
