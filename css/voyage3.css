@@ -1,0 +1,159 @@
+body
+{
+    margin: 0;
+}
+
+/* Page Chine */
+
+.chineimg-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+img
+{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: #008CBA; */
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container {
+    position: relative;
+    width: 33.3%;
+  }
+
+  /* Position absolute */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+  }
+
+  .imgcontainer
+  {
+      width: 100%;
+  }
+
+  .story
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+ .story h1, .story p
+ {
+   
+    text-align: justify;
+    width: 40%;
+ }
+ .story h1
+ {
+     font-size: 40px;
+ }
+hr
+{
+    width: 400px;
+    border: none;
+    border: 1px solid red;
+}
+  /* Animation lantern */
+
+  .lantern-container
+  {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .lantern
+  {
+      max-width: 15%;
+      animation: glow 2s alternate infinite;
+
+  }
+
+  @keyframes glow 
+  {
+      from { filter: drop-shadow(0 0 5px red);
+      
+      }
+
+      to{
+          filter: drop-shadow(0 0 10px yellow);
+      } 
+  }
+
+  .lantern1
+{
+    max-width: 15%;
+
+}
+
+  .lantern1
+  {
+
+        -webkit-animation: slide-top 0,1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both alternate infinite;
+
+  }
+  @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  
