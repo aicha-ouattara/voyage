@@ -3,7 +3,7 @@ body
     margin: 0;
 }
 
-/* Page Chine */
+/* Page-Chine */
 
 .chineimg-container
 {
@@ -54,7 +54,7 @@ img
     width: 33.3%;
   }
 
-  /* accueil image */
+  /* accueil-image */
   
   .centered1 {
     position: absolute;
@@ -71,7 +71,7 @@ img
   }
 
 
-  /* Position absolute */
+  /* Position-absolute */
 
   .container {
     position: relative;
@@ -117,7 +117,7 @@ hr
     border: none;
     border: 1px solid red;
 }
-  /* Animation lantern */
+  /* Animation-lantern */
 
   .lantern-container
   {
@@ -179,7 +179,7 @@ hr
   }
   
 
-  /* Page Corea */
+  /* Page-Corea */
 
   .corea-container
   {
@@ -212,4 +212,28 @@ hr
     justify-content: space-around;
     align-items: center;
     text-align: justify;
+}
+
+.hr
+{
+    width: 290px;
+    border: none;
+    border: 1px solid red;
+}
+
+
+a
+{
+    text-decoration: none;
+    padding-bottom: 10px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+a:hover
+{
+    background-color: salmon;
+
 }
