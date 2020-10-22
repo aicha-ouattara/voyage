@@ -31,6 +31,9 @@ header h1{
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	background-image: url("../ressources/accueil/texture_liege.jpg");
+	background-repeat: repeat;
+	/* background-size: cover; */
 }
 
 .accueil .carte{
@@ -38,6 +41,7 @@ header h1{
 	width: 900px;
 	/* width: 100%; */
 	position: relative;
+	transform: rotate(-5deg);
 }
 
 .carte .map_bg{
@@ -48,6 +52,39 @@ header h1{
 	height: auto;
 	object-fit: scale-down;
 	z-index: 1;
+}
+
+.scotch{
+	position: absolute;
+	z-index: 2;
+}
+
+.haut_gauche{
+	top: -130px;
+	left: -130px;
+	width: 300px;
+	transform: rotate(-50deg);
+}
+
+.bas_gauche{
+	top: 380px;
+	left: -130px;
+	width: 300px;
+	transform: rotate(30deg);
+}
+
+.haut_droit{
+	top: -130px;
+	left: 750px;
+	width: 300px;
+	transform: rotate(40deg);
+}
+
+.bas_droit{
+	top: 380px;
+	left: 750px;
+	width: 300px;
+	transform: rotate(-40deg);
 }
 
 /* _______________________________
@@ -680,9 +717,20 @@ _______________________________ */
 	z-index: 4;
 } */
 
-.aicha{
+/* .aicha{
 	position: absolute;
 	z-index: 3;
 	height: 20px;
 	top 200px;
+} */
+
+
+/* _______________________________
+--------	PROFILS		-------
+_______________________________ */
+
+.profils{
+	height: 300px;
+	display: flex;
+	justify-content: space-around;
 }
