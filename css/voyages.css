@@ -54,13 +54,6 @@ header h1{
 --------	CONTINENTS		-------
 _______________________________ */
 
-.continent_afrique{
-	margin: 0;
-	padding: 0;
-	position: absolute;
-
-}
-
 .img_continent{
 	filter: hue-rotate(0deg);
 	-webkit-filter: hue-rotate(0deg);
@@ -79,12 +72,33 @@ _______________________________ */
 	-webkit-filter: hue-rotate(120deg);
 } */
 
+.lien_continent{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover + article{
+	opacity: 1;
+	font-family: 'Libre Barcode 128 Text', cursive;
+	font-size: 40px;
+	z-index: 10;
+}
+
+article h1{
+	font-family: 'Libre Barcode 128 Text', cursive;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
 /* _______________________________
 --------	AFRIQUE		-------
 _______________________________ */
 
 
 .continent_afrique{
+	margin: 0;
+	padding: 0;
+	position: absolute;
 	transition: left 0.3s ease,
 				top 0.3s ease;
 	left: 349px;
@@ -143,29 +157,6 @@ _______________________________ */
 	text-align: center;
 }
 
-/* .continent article{
-	height: 100px;
-	width : 100px;
-	background-color: blue;
-	opacity: 0;
-	z-index: 10;
-} */
-
-
-
-a:hover + article{
-	opacity: 1;
-	font-family: 'Libre Barcode 128 Text', cursive;
-	font-size: 40px;
-	z-index: 10;
-}
-
-article h1{
-	font-family: 'Libre Barcode 128 Text', cursive;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
 .art_aicha_namibie{
 	position: absolute;
 	height: 130px;
@@ -212,9 +203,109 @@ article h1{
 /* _______________________________
 --------	EUROPE		-------
 _______________________________ */
+.continent_europe{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	transition: left 0.3s ease,
+				top 0.3s ease;
+	left: 376px;
+	top: 94px;
+	z-index: 2;
+	object-fit: fill;
+}
+
+.continent_europe:hover{
+	left: 380px;
+	top: 80px;
+	z-index: 3;
+}
+
+.continent_europe:hover .img_continent{
+	visibility: visible;
+	opacity: 1;
+	filter: hue-rotate(120deg);
+	-webkit-filter: hue-rotate(120deg);
+}
+
+.img_europe{
+	position: absolute;
+	height: auto;
+	width: 190px;
+}
 
 
-.europe{
+.pin_europe{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+
+.pin_laurie_irlande{
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: 24px;
+	left: -8px;
+}
+
+.art_laurie_irlande{
+	position: absolute;
+	height: 130px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: auto;
+	top: -20px;
+	left: -120px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	opacity: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+.pin_laurie_autriche{
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: 43px;
+	left: 45px;
+}
+
+.art_laurie_autriche{
+	position: absolute;
+	height: 130px;
+	width: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	top: 80px;
+	left: 100px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	opacity: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+.pin_laurie_autriche:hover + article{
+	opacity: 1;
+	font-family: 'Libre Barcode 128 Text', cursive;
+	font-size: 40px;
+	z-index: 10;
+}
+
+.continent_europe .tampon{
+	position: absolute;
+	top: -20px;
+	left: 20px;
+	transform: rotate(20deg);
+	font-family: 'Tampon';
+	font-size: 40px;
+	z-index: 2;
+}
+
+/* .europe{
 	width: 22%;
 	left: 375px;
 	top: 90px;
@@ -227,9 +318,115 @@ _______________________________ */
 	left: 380px;
 	top: 80px;
 	z-index: 4;
+} */
+
+/* _______________________________
+--------	ASIE		-------
+_______________________________ */
+
+.continent_asie{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	transition: left 0.3s ease,
+				top 0.3s ease;
+	left: 486px;
+	top: 90px;
+	z-index: 2;
+	object-fit: fill;
 }
 
-.asie{
+.continent_asie:hover{
+	left: 500px;
+	top: 80px;
+	z-index: 3;
+}
+
+.continent_asie:hover .img_continent{
+	visibility: visible;
+	opacity: 1;
+	filter: hue-rotate(120deg);
+	-webkit-filter: hue-rotate(120deg);
+}
+
+.img_asie{
+	position: absolute;
+	height: auto;
+	width: 370px;
+}
+
+
+.pin_asie{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+
+.pin_chine{
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: 100px;
+	left: 170px;
+}
+
+.art_chine{
+	position: absolute;
+	height: 130px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: auto;
+	top: 130px;
+	left: 70px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	opacity: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+.pin_coree{
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: 80px;
+	left: 223px;
+}
+
+.art_coree{
+	position: absolute;
+	height: 130px;
+	width: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	top: 80px;
+	left: 280px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	opacity: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+.pin_chine:hover + article{
+	opacity: 1;
+	font-family: 'Libre Barcode 128 Text', cursive;
+	font-size: 40px;
+	z-index: 10;
+}
+
+.continent_asie .tampon{
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	transform: rotate(-5deg);
+	font-family: 'Tampon';
+	font-size: 40px;
+	z-index: 2;
+}
+
+/* .asie{
 	width: 41%;
 	left: 486px;
 	top: 90px;
@@ -242,9 +439,113 @@ _______________________________ */
 	left: 510px;
 	top: 85px;
 	z-index: 4;
+} */
+
+/* _______________________________
+--------	OCEANIE		-------
+_______________________________ */
+.continent_oceanie{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	transition: left 0.3s ease,
+				top 0.3s ease;
+	left: 690px;
+	top: 342px;
+	z-index: 2;
+	object-fit: fill;
 }
 
-.oceanie{
+.continent_oceanie:hover{
+	left: 720px;
+	top: 360px;
+	z-index: 3;
+}
+
+.continent_oceanie:hover .img_continent{
+	visibility: visible;
+	opacity: 1;
+	filter: hue-rotate(120deg);
+	-webkit-filter: hue-rotate(120deg);
+}
+
+.img_oceanie{
+	position: absolute;
+	height: auto;
+	width: 190px;
+}
+
+
+.pin_oceanie{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+
+.pin_australie{
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: 30px;
+	left: 70px;
+}
+
+.art_australie{
+	position: absolute;
+	height: 130px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: auto;
+	top: -100px;
+	left: -100px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	opacity: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+.pin_new_z{
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: 75px;
+	left: 110px;
+}
+
+.art_new_z{
+	position: absolute;
+	height: 180px;
+	width: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	top: -170px;
+	left: 40px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	opacity: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+.pin_chine:hover + article{
+	opacity: 1;
+	font-family: 'Libre Barcode 128 Text', cursive;
+	font-size: 40px;
+	z-index: 10;
+}
+
+.continent_oceanie .tampon{
+	position: absolute;
+	top: 40px;
+	left: -80px;
+	transform: rotate(-5deg);
+	font-family: 'Tampon';
+	font-size: 40px;
+	z-index: 2;
+}
+/* .oceanie{
 	width: 21%;
 	left: 690px;
 	top: 342px;
@@ -257,9 +558,114 @@ _______________________________ */
 	left: 720px;
 	top: 358px;
 	z-index: 4;
+} */
+
+/* _______________________________
+--------	AMERIQUE		-------
+_______________________________ */
+
+.continent_amerique{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	transition: left 0.3s ease,
+				top 0.3s ease;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+	object-fit: fill;
 }
 
-.amerique{
+.continent_amerique:hover{
+	left: -40px;
+	top: 10px;
+	z-index: 3;
+}
+
+.continent_amerique:hover .img_continent{
+	visibility: visible;
+	opacity: 1;
+	filter: hue-rotate(120deg);
+	-webkit-filter: hue-rotate(120deg);
+}
+
+.img_amerique{
+	position: absolute;
+	height: auto;
+	width: 405px;
+}
+
+
+.pin_amerique{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+
+.pin_mexique{
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: 215px;
+	left: 115px;
+}
+
+.art_mexique{
+	position: absolute;
+	height: 130px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: auto;
+	top: 80px;
+	left: 130px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	opacity: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+.pin_bresil{
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: 320px;
+	left: 250px;
+}
+
+.art_bresil{
+	position: absolute;
+	height: 130px;
+	width: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	top: 320px;
+	left: 330px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	opacity: 0;
+	z-index: 0;
+	text-align: center;
+}
+
+.pin_bresil:hover + article{
+	opacity: 1;
+	font-family: 'Libre Barcode 128 Text', cursive;
+	font-size: 40px;
+	z-index: 10;
+}
+
+.continent_amerique .tampon{
+	position: absolute;
+	top: 230px;
+	left: 80px;
+	transform: rotate(-5deg);
+	font-family: 'Tampon';
+	font-size: 40px;
+	z-index: 2;
+}
+/* .amerique{
 	width: 45%;
 	left: 0px;
 	top: 0px;
@@ -272,7 +678,7 @@ _______________________________ */
 	left: -10px;
 	top: -6px;
 	z-index: 4;
-}
+} */
 
 .aicha{
 	position: absolute;
