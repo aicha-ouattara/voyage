@@ -129,6 +129,10 @@ header:hover{
 	/* background-size: cover; */
 }
 
+.accueil .espace_dessus_carte{
+	height: 100px;
+}
+
 .accueil .carte{
 	height: 540px;
 	width: 900px;
@@ -152,28 +156,28 @@ header:hover{
 	z-index: 2;
 }
 
-.haut_gauche{
+.carte .haut_gauche{
 	top: -130px;
 	left: -130px;
 	width: 300px;
 	transform: rotate(-50deg);
 }
 
-.bas_gauche{
+.carte .bas_gauche{
 	top: 380px;
 	left: -130px;
 	width: 300px;
 	transform: rotate(30deg);
 }
 
-.haut_droit{
+.carte .haut_droit{
 	top: -130px;
 	left: 750px;
 	width: 300px;
 	transform: rotate(40deg);
 }
 
-.bas_droit{
+.carte .bas_droit{
 	top: 380px;
 	left: 750px;
 	width: 300px;
@@ -825,6 +829,27 @@ _______________________________ */
 .profils{
 	position: relative;
 	height: 400px;
+}
+
+.profils .billets{
+	position: absolute;
+	top: 0;
+	left: -800px;
+	transform: rotate(-60deg);
+	filter: grayscale(0.4);
+}
+
+.profils .coins{
+	position: absolute;
+	width: 50%;
+	top: -300px;
+	left: +400px;
+	transform: rotate(-60deg);
+	filter: grayscale(0.6);
+}
+
+.profils .coins > img{
+	transform: scale(0.25);
 }
 
 .titre{
