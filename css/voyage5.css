@@ -1,0 +1,43 @@
+body
+{
+    margin: 0;
+}
+
+  /* accueil-image */
+  
+  .centered1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+  }
+
+ .accueil-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .imgaccueil
+  {
+      max-width: 100%;
+  }
+
+  /* Background-image */
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 50%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+ 
