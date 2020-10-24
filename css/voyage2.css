@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+/*HEADER*/
+
+header img{
+    width: 100%;
+}
+
+header h1{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: 8em;
+    color: white;
+}
+
+
+
+
+
+/* container title*/
+
+.container-title{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-title img{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+.container-title img:hover{
+    transform: scale(1.3);
+}
+
+.titleir{
+    position: absolute;
+    left: 40%;
+    top: 8%;
+    font-family: 'Marcellus SC', serif;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+
+
+}
+
+
+  
+
+/* Presentation atlanticway*/
+
+.atlway{
+    width: 41%;
+    margin-left: 5%;
+}
+
+.container-atlanticway{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+
+.textatlanticway{
+    width: 40%;
+}
+
+.textatlanticway h2{
+    font-size: 2.8em;
+    font-family: 'Alegreya SC', serif;
+    color: white;
+    background-color: rgb(39, 39, 39);
+    padding: 2%;
+    position: absolute;
+    top: 0%;
+    left: 43%;
+
+}
+
+.textatlanticway p{
+    position: absolute;
+    top: 35%;
+    font-size: 1.7em;
+    font-family: 'Caveat', cursive;
+    width: 30%;
+    text-align: justify;
+
+}
+
+/* IMAGEDEROULANTE*/
+
+.gifcar{
+    width: 13%;
+    border-bottom: 7px double rgb(105, 105, 105);
+}
+
+.imagederoulante{
+    background-color: rgba(114, 173, 132, 0.356);
+}
+
+.imagederoulante> :first-child {
+    display: inline-block;                
+    padding-left: 85%;                   
+    white-space: nowrap;                 
+    animation: imagederoulante 9s infinite linear;
+    animation-name: imagederoulante;       
+    animation-delay: 0s;                 
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;   
+  }
+  
+  @keyframes imagederoulante {
+    0% {
+      transform: translate3d(-100%,0,0);  
+    }
+  }
+
+.container-roadtrip{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* margin-left: 7%; */
+        margin-top: 5%;
+        background-color: rgba(114, 173, 132, 0.356);
+  }
+
+  .container-roadtrip span{
+    font-family: 'Alegreya SC', serif;
+    font-size: 1.5em;
+    margin-left: 5%;
+  }
+
+  
+.container-roadtrip span {
+    visibility: hidden;
+}
+ 
+.container-roadtrip a:hover + span {
+    visibility: visible;
+    position: relative;
+}
+
+
+
+.donegal{
+    width: 100%;
+}
+
+.mayo{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mayospan{
+    margin-left: 10%;
+}
+
+.clare{
+    width: 100%;
+}
+
+.cork{
+    width: 80%;
+}
+
+.roadtrip{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.roadtrip img:hover{
+    box-shadow: 2px 2px 3px 3px rgb(112, 112, 112);
+}
+
+/* Presentation dublin*/
+
+.bridgedublin{
+    width: 50%;
+}
+
+.container-dublin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+
+.textdublin{
+    width: 30%;
+}
+
+.textdublin h2{
+    font-size: 2.8em;
+    font-family: 'Alegreya SC', serif;
+    color: white;
+    background-color: rgb(39, 39, 39);
+    padding: 2%;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+
+}
+
+.textdublin p{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    font-size: 1.6em;
+    font-family: 'Caveat', cursive;
+    width: 35%;
+    text-align: justify;
+
+}
+
+/* TOWN and NATURE */
+
+.townandsea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+    position: relative;
+}
+
+.villedublin{
+    width: 30%;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.merdublin{
+    width: 29%;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.txtdublinsea{
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    width: 36%;
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.container-townandsea{
+    background-color: rgb(219, 219, 219);
+    position: relative;
+}
+
+/* container Whiskey */
+
+/* Presentation dublin*/
+
+.whiskey{
+    width: 50%;
+}
+
+.container-whiskey{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+
+.textwhiskey{
+    width: 30%;
+}
+
+.textwhiskey h2{
+    font-size: 2em;
+    font-family: 'Alegreya SC', serif;
+    color: white;
+    background-color: rgb(39, 39, 39);
+    padding: 2%;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+
+}
+
+.textwhiskey p {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    font-size: 1.6em;
+    font-family: 'Caveat', cursive;
+    width: 35%;
+    text-align: justify;
+
+}
+
+/* .textwhiskey a{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+} */
+
+
+
+
+/* container flight */ 
+
+.container-flight{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/*ANIM AVION */
+
+.container-avion{
+    position: absolute;
+    left: 60%;
+    top: 80%;
+    animation: flightanim ease-in-out 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    z-index: 1;
+}
+
+.departures{
+    position: relative;
+    left: 80%;
+    width: 10%;
+}
+
+@keyframes flightanim{
+    0% {
+      transform:  translate(174px,-144px)  scaleY(1.00) ;
+    }
+    100% {
+      transform:  translate(-122px,120px)  scaleY(0.95) rotate(-10deg);
+    }
+  }
+/*AUTRICHE*/
+
+/*container title*/
+
+.container-title{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-title img{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+.container-title img:hover{
+    transform: scale(1.3);
+}
+
+.titleautriche{
+    position: absolute;
+    left: 37%;
+    top: 13%;
+    font-family: 'Marcellus SC', serif;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+
+
+}
+
+
+
+
+/* container begin*/
+
+.container-begin{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -10%;
+}
+
+.container-begin img{
+    width: 60%;
+    opacity: 0.4;
+}
+
+.container-begin h2{
+    position: absolute;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(0, 0, 0);
+    left: 20%;
+    font-size: 2.5em;
+
+}
+
+.bigcontaineroverlay{
+    margin-top: 4%;
+}
+
+/* container overlay */
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: 1s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 100%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > a {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+  }
+
+  a:hover{
+      color: rgb(0, 128, 122);
+  }
+  
+  .box:hover { flex: 0 0 40%; }
+  .box:hover > imgs {
+    width: 100%;
+    height: 90%;
+  }
+
+
+
+  /* ACTIVITIES */
+
+  .articleactivities{
+      position: relative;
+      margin-top: 5%;
+  }
+
+  .titleactivities{
+    position: absolute;
+    font-family: 'Alegreya SC', serif;
+    color: rgb(0, 0, 0);
+    top: -10%;
+    left: 20%;
+    font-size: 2.5em;
+  }
+
+.container-activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: justify;
+    border: 3px inset rgba(165, 165, 165, 0.63);
+    background-color: rgba(233, 232, 232, 0.63);
+    height: 480px;
+}
+
+.container-activities img{
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-activities p{
+    width: 70%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container-activities a{
+    width: 50%;
+    color: rgb(173, 67, 67);
+    position: relative;
+    left: 10%;
+
+
+}
+
+.bigcontaineractivities{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 5%;
+
+}
+
+.bigcontaineractivities2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+
+}
+
+/*hebergement*/
+
+.home img{
+    width: 100%;
+}
+
+.home{
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../ressources/autriche/hebergements.PNG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container-txt{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    left: 15%;
+    width: 30%;
+    height: 456px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.container-txt h3{
+    margin-top: 30%;
+    font-size: 2em;
+    font-family: 'Noto Serif', serif;
+
+}
+
+.container-txt p{
+    margin-top: 0%;
+    font-family: 'Noto Serif', serif;
+}
+
+.container-txt a{
+    color: white;
+}
+
+.container-txt a:hover{
+    color: green;
+}
+
+
+
+
+
+
+   
+
+
+
+
+
