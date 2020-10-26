@@ -274,6 +274,7 @@ body
     text-align: center;
     padding: 10px;
     color: white;
+    border-radius: 3px;
  }
 
 .activity-container img
@@ -305,6 +306,89 @@ body
 transform: translateX(-3px);
 }
 
+/* Table-Lists */
+
+.flextable-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+/* Lists */
+.uldescriptif-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+  background-color: rgb(0, 119, 255);
+  color: white;
+  margin: 30px;
+  border: 3px solid #53a7ea;
+}
+
+ul 
+{
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  padding-left: 2rem;
+  background-image: url(../ressources/asie/chine/star.png);
+  background-position: 0 0;
+  background-size: 1.3rem 1.3rem;
+  background-repeat: no-repeat;
+}
+
+/* Table */
+th, td
+{
+ padding: 10px;
+
+}
+
+.th-chine
+{
+  background-color: blue;
+  color: white;
+}
+.th-chine2
+{
+  background-color: rgb(0, 51, 218);
+  color: white;
+}
+.td-chine
+{
+  background-color: rgb(95, 127, 233);
+}
+.td-chine1
+{
+  background-color: #53a7ea;
+}
+
+.table-chine
+{
+  width: 650px;
+ 
+}
+.center-text h1, .center-text h2
+{
+  background-color: rgb(255, 208, 0);
+  padding: 10px;
+  color: white;
+  border: 3px dotted black;
+  font-size: 17px;
+}
+
+.center-text 
+{
+  border: 3px dotted rgb(46, 46, 255);
+  padding: 10px;
+}
 
 
 /* Animation-slide */
