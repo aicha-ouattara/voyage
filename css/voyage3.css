@@ -1,6 +1,7 @@
 body
 {
     margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* Page-Chine */
@@ -101,6 +102,7 @@ img
       flex-direction: column;
       align-items: center;
       padding: 30px;
+      color: #BFBFBF;
   }
 
  .story p
@@ -112,6 +114,8 @@ img
  .story h1,  .story1 h1
  {
      font-size: 40px;
+     color: white;
+     background-color: red;
  }
 hr
 {
@@ -119,7 +123,7 @@ hr
     border: none;
     border: 1px solid red;
 }
-  /* Animation-lantern */
+  /* Animation-lantern-bimbimbap*/
 
   .lantern-container
   {
@@ -149,7 +153,6 @@ hr
   .lantern1
 {
     max-width: 15%;
-
 }
 
   .lantern1
@@ -193,6 +196,8 @@ hr
 {
   font-size: 50px;
   text-align: center;
+  background-color: tomato;
+  padding: 20px;
 }
  
  .story1 p
@@ -206,6 +211,19 @@ hr
     display: flex;
     flex-direction: column;
 }
+
+.coreeimg-container h1
+{
+  color: white;
+  font-size: 30px;
+  background-color: red;
+}
+
+.coreeimg-container p
+{
+  color: #BFBFBF;
+}
+
 
 .coree-container
 {
@@ -238,4 +256,85 @@ a:hover
 {
     background-color: salmon;
 
+}
+
+/* Table-Lists */
+
+.flextable-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+/* Lists */
+.uldescriptif-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+  background-color: salmon;
+  color: white;
+  margin: 30px;
+  border: 3px dotted red;
+}
+
+ul 
+{
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  padding-left: 2rem;
+  background-image: url(../ressources/asie/chine/star.png);
+  background-position: 0 0;
+  background-size: 1.3rem 1.3rem;
+  background-repeat: no-repeat;
+}
+
+/* Table */
+th, td
+{
+ padding: 10px;
+
+}
+
+.th-chine
+{
+  background-color: red;
+}
+.th-chine2
+{
+  background-color: rgb(253, 55, 55);
+}
+.td-chine
+{
+  background-color: salmon;
+}
+.td-chine1
+{
+  background-color: rgb(252, 170, 161);
+}
+
+.table-chine
+{
+  width: 650px;
+ 
+}
+.center-text h1, .center-text h2
+{
+  background-color: tomato;
+  padding: 10px;
+  color: white;
+  border: 3px dotted black;
+}
+
+.center-text 
+{
+  border: 3px dotted red;
+  padding: 10px;
 }
