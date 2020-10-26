@@ -37,21 +37,59 @@
   }
  .scroller-container 
 {
-    height: 525px;
+    height: 440px;
     overflow-y: scroll;
     border: 5px solid blueviolet;
-    /* scroll-behavior: smooth; */
-    /* scroll-snap-type: y mandatory; */
+ 
 }
-
-.scroll-image
+video
 {
     width: 800px;
 }
-
 .general-container
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.frida
+{
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.frida-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frida-text p
+{
+    width: 70%;
+    text-align: justify;
+}
+.artfrida-container img
+{
+  max-width: 30%;
+  border: 5px solid blueviolet;
+}
+
+.artfrida-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   margin: 30px;
+}
+
+.title-amerique
+{
+    font-size: 40px;
+    text-align: center;
 }
