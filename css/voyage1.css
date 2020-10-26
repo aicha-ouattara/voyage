@@ -22,3 +22,36 @@
   {
       max-width: 100%;
   }
+
+  /* Mexique */
+
+  .mexico1-container img
+  {
+    max-width: 50%;
+  }
+
+  .mexico1-container
+  {
+      display: flex;
+      flex-direction: row;
+  }
+ .scroller-container 
+{
+    height: 525px;
+    overflow-y: scroll;
+    border: 5px solid blueviolet;
+    /* scroll-behavior: smooth; */
+    /* scroll-snap-type: y mandatory; */
+}
+
+.scroll-image
+{
+    width: 800px;
+}
+
+.general-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
