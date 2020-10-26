@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+
+/*HEADER*/
+
+header img{
+    width: 100%;
+}
+
+header h1{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 10em;
+    color: white;
+}
+
+/* container title*/
+
+.container-title{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-title img{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+}
+
+.container-title img:hover{
+    transform: scale(1.3);
+}
+
+.titleaus{
+    position: absolute;
+    left: 33%;
+    top: 33%;
+    font-family: 'Marcellus SC', serif;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(255, 242, 242);
+    z-index: 1;
+}
+
+
+/* Presentation SURF*/
+
+.surfwomen{
+    width: 41%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.container-surf{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+
+.textsurf{
+    width: 40%;
+}
+
+.textsurf h2{
+    font-size: 3em;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 112, 136, 0.315);
+    padding: 2%;
+    position: absolute;
+    border-radius: 5px;
+    top: 0%;
+    left: 13%;
+
+}
+
+.textsurf p{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 1.7em;
+    color: rgb(95, 95, 95);
+    font-family: 'Oswald', sans-serif;
+    width: 30%;
+    text-align: justify;
+}
+
+/* FLIX */
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: rgba(113, 145, 160, 0.562);
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-back a{
+      position: relative;
+      top: 40%;
+      color: white;
+      text-decoration: none;
+  }
+
+  .flip-box-back a:hover{
+      color: rgb(23, 0, 128);
+      text-decoration: underline;
+  }
+
+  /* spot surf */
+
+  .container-spotsurf{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5%;
+  }
+
+  /* ROADTRIP*/
+
+.gifcar{
+    width: 13%;
+    border-bottom: 7px double rgb(105, 105, 105);
+}
+
+.imagederoulante{
+    background-color: rgba(34, 112, 136, 0.315);
+}
+
+.imagederoulante> :first-child {
+    display: inline-block;                
+    padding-left: 85%;                   
+    white-space: nowrap;                 
+    animation: imagederoulante 9s infinite linear;
+    animation-name: imagederoulante;       
+    animation-delay: 0s;                 
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;  
+     
+  }
+  
+  @keyframes imagederoulante {
+    0% {
+      transform: translate3d(-100%,0,0);  
+    }
+  }
+
+
+  .roadtripart h2{
+      margin-top: 5%;
+      font-size: 2em;
+      font-family: 'Staatliches', cursive;
+      letter-spacing: 2px;
+      color: rgb(255, 255, 255);
+      background-color: rgba(12, 104, 133, 0.596);
+      padding: 2%;
+      border-radius: 5px;
+      text-align: center;
+      width: 60%;
+  }
+
+.container-roadtrip{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(34, 112, 136, 0.315);
+  }
+
+  .container-roadtrip span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    /* margin-left: 5%; */
+  }
+
+  
+.container-roadtrip span {
+    visibility: hidden;
+}
+ 
+.container-roadtrip a:hover + span {
+    visibility: visible;
+    position: relative;
+}
+
+
+
+.sydney{
+    width: 100%;
+    height: 260px;
+}
+
+.bluemontains{
+    width: 100%;
+    height: 260px;
+}
+
+.byron{
+    width: 100%;
+    height: 260px;
+}
+
+.brisbane{
+    width: 100%;
+    height: 260px;
+}
+
+.corail{
+    width: 100%;
+    height: 260px;
+}
+
+
+
+.roadtrip{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    /* margin-left: 5%; */
+}
+
+
+.roadtrip img:hover{
+    box-shadow: 2px 2px 3px 3px rgb(112, 112, 112);
+}
+
+/*Perth*/
+
+.container-perth img{
+    width: 100%;
+}
+
+.container-perth{
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    height: 510px;
+    background-image: url(../ressources/australie/perth.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container-txtperth{
+    position: absolute;
+    background-color: rgba(89, 116, 128, 0.76);
+    color: white;
+    left: 5%;
+    width: 30%;
+    height: 450px;
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: justify;
+}
+
+.container-txtperth h3{
+    margin-top: 10%;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.container-txtperth p{
+    margin-top: 0%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-txtperth a{
+    color: white;
+}
+
+.container-txtperth a:hover{
+    color: rgb(0, 13, 128);
+}
+
+/* container flight */ 
+
+.container-flight{
+    position: relative;
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+
+/*ANIM AVION */
+
+.container-avion{
+    position: absolute;
+    left: 60%;
+    top: 80%;
+    animation: flightanim ease-in-out 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    z-index: 2;
+}
+
+.departures{
+    position: relative;
+    left: 80%;
+    width: 10%;
+}
+
+@keyframes flightanim{
+    0% {
+      transform:  translate(174px,-144px)  scaleY(1.00) ;
+    }
+    100% {
+      transform:  translate(-122px,120px)  scaleY(0.95) rotate(-10deg);
+    }
+  }
+
+
+/* NOUVELLE ZELANDE */
+
+/* container title*/
+
+
+.titlenewz{
+    position: absolute;
+    left: 36%;
+    top: 40%;
+    font-family: 'Marcellus SC', serif;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(255, 242, 242);
+    z-index: 1;
+}
+
+/* container overlay newzealand */
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: 1s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 100%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > a {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+  }
+
+  a:hover{
+      color: rgb(0, 128, 122);
+  }
+  
+  .box:hover { flex: 0 0 40%; }
+  .box:hover > imgs {
+    width: 100%;
+    height: 90%;
+  }
+
+  .bigcontaineroverlay h2{
+    margin-top: 5%;
+    font-size: 2em;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    background-color: #011f66ad;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    width: 60%;
+}
+
+/* ROADTRIP NEW ZEALAND */
+
+.bigcontainer-roadtrip{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-img{
+    width: 50%;
+}
+
+.container-img img {
+    width: 85%;
+}
+
+.container-form h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+}
+
+.container-form{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    background-image: url(../ressources/nvellezelande/map.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container-form select{
+    font-size: 0.7em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container-form button{
+    font-size: 0.8em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(150, 197, 141, 0.795);
+}
+
+.container-form button:hover{
+    box-shadow: 2px 1px 2px 2px rgb(104, 104, 104);
+}
+
+/* ACTIVITIES */
+
+.container-activities{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 5%;
+
+}
+
+.container-activities span{
+font-family: 'Oswald', sans-serif;
+font-size: 1.5em;
+/* margin-left: 5%; */
+}
+
+
+.container-activities span {
+visibility: hidden;
+}
+
+.container-activities a:hover + span {
+visibility: visible;
+position: relative;
+}
+
+
+
+.aventure{
+width: 100%;
+height: 300px;
+}
+
+
+.activities{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 30%;
+/* margin-left: 5%; */
+}
+
+
+
+
+
+
+
