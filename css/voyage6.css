@@ -823,6 +823,12 @@ _______________________________ */
 	left: 200px;
 	transform: rotate(5deg);
 	z-index: 5;
+	transform-origin: 20px 40px;
+	transition: 1s;
+}
+
+.profils .voyageur_1 .polaroid:hover{
+	transform: rotate(-90deg);
 }
 
 .profils .voyageur_1 .polaroid .photo{
@@ -891,6 +897,12 @@ _______________________________ */
 	left: 120px;
 	transform: rotate(-5deg);
 	z-index: 5;
+	transform-origin: 80px 50px;
+	transition: 1s;
+}
+
+.profils .voyageur_2 .polaroid:hover{
+	transform: rotate(-180deg);
 }
 
 .profils .voyageur_2 .polaroid .photo{
@@ -958,7 +970,13 @@ _______________________________ */
 	top: 30px;
 	left: 0px;
 	transform: rotate(-5deg);
+	transform-origin: 20px 50px;
 	z-index: 5;
+	transition: 1s ;
+}
+
+.profils .voyageur_3 .polaroid:hover{
+	transform: rotate(-140deg);
 }
 
 .profils .voyageur_3 .polaroid .photo{
