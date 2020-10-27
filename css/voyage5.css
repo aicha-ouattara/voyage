@@ -1,9 +1,11 @@
 body
 {
     margin: 0;
-    font-family: 'Domine', serif;
 }
 
+main{
+	font-family: 'Domine', serif;
+}
   /* accueil-image */
 
   .centered1

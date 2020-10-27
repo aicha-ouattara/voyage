@@ -1,7 +1,10 @@
 body
 {
     margin: 0;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+main{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* Page-Chine */
