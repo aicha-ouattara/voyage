@@ -41,9 +41,9 @@ body
       color: white;
       padding: 30px;
   }
-  .backgroundnamibie1 h1
+  .backgroundnamibie1 h2
   {
-     text-decoration: underline;
+    font-size: 35px;
   }
 
 
@@ -51,20 +51,21 @@ body
   {
       font-size: 70px;
       text-align: center;
+      text-decoration: underline;
   }
 
   .textbutton-container h2
   {
       font-size: 20px;
-      color: yellow;
+      color: white;
       font-family: 'Old Standard TT', serif;
   }
 
   .textbutton-container a
 {
-    background-color: yellow;
+    background-color: white;
     text-decoration: none;
-    color: blue;
+    color: black;
     padding: 10px;
     font-family: 'Domine', serif;
     font-size: 20px;
@@ -74,7 +75,7 @@ body
 
 .textbutton-container a:hover
 {
-    background-color: white;
+    background-color: yellow;
     transition: 3s;
 }
 
@@ -124,7 +125,7 @@ body
 
  .aventure h1
  {
-    color: yellow;
+    color: white;
     font-size: 30px;
     text-decoration: underline;
  }
