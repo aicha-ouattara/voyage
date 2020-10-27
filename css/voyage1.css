@@ -1,6 +1,7 @@
   body
   {
       margin: 0;
+      font-family: 'Alegreya Sans SC', sans-serif;
   }
   /* accueil-image */
   
@@ -36,6 +37,16 @@
       flex-direction: row;
   }
 
+  .mex-colunm p
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+  .mex-colunm h1
+  { 
+  font-size: 20px;
+  color: violet;
+  text-decoration: underline;
+  }
   .mex-colunm
   {
       display: flex;
@@ -45,7 +56,7 @@
       padding: 10px;
   }
 
-  .mex-colunm a
+  .mex-colunm a, .text-bresil a
   {
       text-decoration: none;
       background-color: violet;
@@ -54,7 +65,8 @@
       border-radius: 4px;
   }
 
-  .mex-colunm a:hover
+  .mex-colunm a:hover, .text-bresil a:hover
+
   {
       background-color: black;
   }
@@ -96,12 +108,14 @@ video
 .frida-text h1
 {
     font-size: 50px;
+    color: blueviolet;
 }
 
 .frida-text p
 {
     width: 70%;
     text-align: justify;
+    font-family: 'Roboto', sans-serif;
 }
 .artfrida-container img
 {
@@ -122,6 +136,8 @@ video
 {
     font-size: 40px;
     text-align: center;
+    text-decoration: overline;
+    color: violet;
 }
 
 /* Bresil */
@@ -164,16 +180,32 @@ video
       align-items: center;
   }
 
+  .text-bresil h1
+  {
+    font-size: 30px;
+    color: violet;
+    text-decoration: underline;
+  }
+
   .text-bresil p
   {
       text-align: justify;
       width: 80%;
+      font-family: 'Roboto', sans-serif;
   }
+
 
   .textbresil-container
   {
       display: flex;
       flex-direction: row;
+      padding: 30px;
+  }
+
+  .bresilstory-container h1
+  {
+    font-size: 50px;
+    color: white;
   }
 
   .bresil7
@@ -187,6 +219,9 @@ video
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
+      background-color: violet;
+      font-family: 'Roboto', sans-serif;
+      color: white;
   }
 
   .bresilstory-container p, .bresilstory-container h1
@@ -231,3 +266,87 @@ video
               transform-origin: top;
     }
   }
+
+  /* Table-Lists */
+
+.flextable-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+/* Lists */
+.uldescriptif-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+  background-color: rgb(120, 12, 221);
+  color: white;
+  margin: 30px;
+  border: 3px solid violet;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul 
+{
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  padding-left: 2rem;
+  background-image: url(../ressources/mexique/sombrero.png);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}
+
+/* Table */
+th, td
+{
+ padding: 10px;
+ 
+}
+
+.th-chine
+{
+  background-color: rgb(150, 79, 216);
+  color: white;
+}
+.th-chine2
+{
+  background-color: rgb(150, 79, 216);
+}
+.td-chine
+{
+  background-color: violet;
+}
+.td-chine1
+{
+  background-color: rgb(241, 180, 241);
+}
+
+.table-chine
+{
+  width: 650px;
+ 
+}
+.center-text h1, .center-text h2
+{
+  background-color: rgb(150, 79, 216);
+  padding: 10px;
+  color: white;
+}
+
+.center-text 
+{
+  background-color: rgb(120, 12, 221);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}

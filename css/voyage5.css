@@ -338,7 +338,7 @@ ul
 li {
   padding: 10px;
   padding-left: 2rem;
-  background-image: url(../ressources/asie/chine/star.png);
+  background-image: url(../ressources/Afrique/namibie/camel.png);
   background-position: 0 0;
   background-size: 1.3rem 1.3rem;
   background-repeat: no-repeat;
@@ -377,17 +377,17 @@ th, td
 }
 .center-text h1, .center-text h2
 {
-  background-color: rgb(255, 208, 0);
+  background-color: #53a7ea;
   padding: 10px;
   color: white;
-  border: 3px dotted black;
   font-size: 17px;
 }
 
 .center-text 
 {
-  border: 3px dotted rgb(46, 46, 255);
+  background-color:  rgb(46, 46, 255);
   padding: 10px;
+  border-radius: 5px;
 }
 
 
