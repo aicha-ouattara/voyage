@@ -53,6 +53,24 @@ header h1{
     z-index: 1;
 }
 
+/*video*/
+
+.videoaustralia{
+    width: 53%;
+}
+
+.boxaus {
+    position: relative;
+  width: 34.9%;
+  height: 375px;
+    border: 1px solid #838383;
+}
+
+.boxaus:hover .click {
+    opacity: 1; /*le texte passe à opacity 1 et devient visible*/
+    transition: opacity 0.9s;
+}
+
 
 /* Presentation SURF*/
 
@@ -378,64 +396,125 @@ header h1{
     z-index: 1;
 }
 
-/* container overlay newzealand */
+/*video*/
 
-.container {
-    display: flex;
-    width: 100%;
-    padding: 4% 2%;
-    box-sizing: border-box;
-    height: 100vh;
-  }
-  
-  .box {
-    flex: 1;
-    overflow: hidden;
-    transition: 1s;
-    margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0,0,0,.1);
-    line-height: 0;
-  }
-  
-  .box > img {
-    width: 100%;
-    height: calc(100% - 10vh);
-    object-fit: cover; 
-    transition: .5s;
-  }
-  
-  .box > a {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.6;
-    font-family: 'Roboto', sans-serif;
-    color: gray;
-  }
-
-  a:hover{
-      color: rgb(0, 128, 122);
-  }
-  
-  .box:hover { flex: 0 0 40%; }
-  .box:hover > imgs {
-    width: 100%;
-    height: 90%;
-  }
-
-  .bigcontaineroverlay h2{
-    margin-top: 5%;
-    font-size: 2em;
-    font-family: 'Staatliches', cursive;
-    letter-spacing: 2px;
-    color: rgb(255, 255, 255);
-    background-color: #011f66ad;
-    padding: 2%;
-    border-radius: 5px;
-    text-align: center;
-    width: 60%;
+.videozealand{
+    width: 53%;
 }
+
+/*LE STYLE DU TEXTE CLICK TO ZOOM*/
+.click {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 10;
+    color: white;
+    background-color: #6fad6d;
+    font-size: 1em;
+    font-family: "Lucida Console", Courier, monospace;
+    opacity: 0; /*opacity 0 car le texte ne doit pas être affiché avant le hover*/
+}
+
+.box:hover .click {
+    opacity: 1; /*le texte passe à opacity 1 et devient visible*/
+    transition: opacity 0.9s;
+}
+
+
+/*flexbox*/
+
+.conteneur-flexbox {
+  max-width: 650px;
+  margin: 100px auto 0 auto;
+  padding: 0px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.box {
+    position: relative;
+  width: 39.5%;
+  height: 375px;
+    border: 1px solid #838383;
+}
+
+.container-begin{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+/* FLIX */
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back1 {
+    background-color: rgba(113, 160, 123, 0.562);
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-back1 a{
+      position: relative;
+      top: 40%;
+      color: white;
+      text-decoration: none;
+  }
+
+  .flip-box-back1 a:hover{
+      color: rgb(5, 95, 2);
+      text-decoration: underline;
+  }
+
+  /* spot surf */
+
+  .container-spotnewzealand{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
 
 /* ROADTRIP NEW ZEALAND */
 
@@ -489,15 +568,27 @@ header h1{
 
 /* ACTIVITIES */
 
+.article-activities h2{
+    margin-top: 5%;
+    font-size: 1.5em;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    background-color: #011f66ad;
+    padding: 1%;
+    border-radius: 5px;
+    text-align: center;
+    width: 60%;
+}
+
 .container-activities{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 95%;
     margin-top: 5%;
 
 }
@@ -522,7 +613,8 @@ position: relative;
 
 .aventure{
 width: 100%;
-height: 300px;
+height: 220px;
+border: 3px solid white;
 }
 
 
@@ -535,8 +627,88 @@ width: 30%;
 /* margin-left: 5%; */
 }
 
+/* CONTAINER LISTE INDISPENSABLES */
+
+.container-list
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+  width: 40%;
+  background-color: rgb(154, 176, 207);
+  color: white;
+  border: 3px dotted rgb(38, 0, 255);
+}
+
+.container-list h1{
+    text-align: center;
+}
+
+ul 
+{
+  list-style-type: none;
+}
+
+li {
+  /* padding: 10px; */
+  margin: 2%;
+  width: 100%;
+  padding-left: 2rem;
+  background-image: url(../ressources/nvellezelande/pins.png);
+  background-size: 1em;
+  background-repeat: no-repeat;
+  font-size: 1em;
+}
+
+/* CONTAINER TABLEAU BUDGET*/
+
+/* Table */
+
+.table-oceanie{
+width: 90%;
+color: white;
+}
+
+th, td
+{
+ padding: 10px;
+
+}
+
+.td-oc
+{
+  background-color: rgb(97, 140, 201);
+}
+.td-oc1
+{
+  background-color: rgb(5, 79, 184);
+}
 
 
+.center-text h1
+{
+  color: white;
+  text-decoration: underline;
+  font-size: 1.5em;
+  text-align: center;
+
+}
+
+.center-text 
+{
+  border: 3px dotted rgb(38, 0, 255);
+  padding: 10px;
+  width: 40%;
+  background-color: rgba(154, 176, 207);
+}
+
+.flextable-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
+}
 
 
 
