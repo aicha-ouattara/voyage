@@ -6,20 +6,67 @@
 	<title>Europe</title>
 	<link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/voyage2.css">
+	<link rel="stylesheet" href="../css/voyages.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
 </head>
 
 <body>
+	<header class="ticket">
+		<div class="div_logo">
+			<div class="rond_logo">
+				<img src="../ressources/menu/logo_avion.png" alt="Logo Avion" height="70px">
+			</div>
+		</div>
+		<div class="div_nav">
+			<nav class="ticket_gauche">
+				<h1>VOYAGEUR</h1>
+				<div class="choisir_voyageur">
+					<h2>CHOISIR</h2>
+					<ul class="hide">
+						<li><a href="voyage3.html#chine">Poumba</a></li>
+						<li><a href="voyage4.html#australie">Lolo</a></li>
+						<li><a href="voyage1.html#mexique">Pete</a></li>
+					</ul>
+				</div>
 
-	<header>
+				<h1>DESTINATION</h1>
+				<div class="choisir_destination">
+					<h2>CHOISIR</h2>
+					<ul class="hide">
+						<li><a href="voyage5.html">AFRIQUE</a></li>
+						<li><a href="voyage1.html">AMERIQUE</a></li>
+						<li><a href="voyage3.html">ASIE</a></li>
+						<li><a href="voyage2.html">EUROPE</a></li>
+						<li><a href="voyage4.html">OCEANIE</a></li>
+						<li><a href="../voyages.html">CARTE</a></li>
+					</ul>
+				</div>
 
-		<h1 class="title1">EUROPE</h1>
+				<div class="ticket_gate">
+					<h1>GATE</h1>
+					<h3>13A</h3>
+				</div>
+			</nav>
+			<div class="ticket_droit">
+				<h1>BOARDING </h1>
+				<img src="../ressources/menu/logo_avion.png" alt="Logo Avion" height="20px">
+				<h1> PASS</h1>
+			</div>
+		</div>
 
-		<img src="../ressources/Irlande/imageaccueileurope.jpg" alt="accueil">
 	</header>
 
-	<main>
 
-		<section class="irlande">
+
+	<main>
+		<div class="header">
+
+			<h1 class="title1">EUROPE</h1>
+
+			<img src="../ressources/Irlande/imageaccueileurope.jpg" alt="accueil">
+		</div>
+
+		<section class="irlande" id="irlande">
 
 			<article class="container-title">
 				<h1 class="titleir">L'IRLANDE</h1>
@@ -119,10 +166,10 @@
 					<p>Le whiskey irlandais a de nombreux fans dans le monde entier, mais nous aimerions que vous le
 						dégustiez sur sa terre natale. Nous voulons vous emmener à la rencontre des personnalités
 						uniques qui ont fait l'histoire de notre « uisce beatha » (ishka baa-ha) ou whiskey. <a href="https://www.ireland.com/fr-fr/articles/tripideas/whiskey-trail/">En savoir plus </a> <br><br> <a href="https://irishwhiskey360.com/wp-content/themes/whiskey360/assets/pdf/irish_whiskey_downloadable_map.pdf">Visualiser le parcours du Whiskey ici ! </a>.</p><br>
-						
+
 				</div>
 
-				
+
 			</article>
 
 			<article class="container-flight">
@@ -139,7 +186,7 @@
 		<hr>
 
 
-		<section class="autriche">
+		<section class="autriche" id="autriche">
 
 			<article class="container-title">
 				<h1 class="titleautriche">L'AUTRICHE</h1>
@@ -284,12 +331,12 @@
 				<li>Un parapluie /Kway</li>
             </ul>
 		</section>
-		
+
 		<section class="flextable-container">
 
             <article class="center-text">
 				<h1>Budget journalier une fois sur place</h1>
-				
+
                 <table class="table-europe">
                     <tr>
                         <th class="th-eu"></th>
@@ -312,12 +359,12 @@
                         <td class="td-eu1">11.35€ (16.5%) </td>
                     </tr>
 				</table>
-			
+
 			</article>
-			
+
 			<article class="center-text">
 				<h1>Budget voyage</h1>
-				
+
                 <table class="table-europe">
                     <tr>
                         <th class="th-eu"></th>
@@ -338,6 +385,46 @@
 
 
 	</main>
+
+	<footer>
+		<div class="passport_et_tickets">
+			<div class="ticket_news">
+				<h2>NewsLetter</h2>
+				<hr>
+				<p>Inscrivez vous pour suivre nos aventures!</p>
+				<form class="form_newsletter" action="" method="get">
+					<div class="form_name">
+						<label for="name">Votre Prénom:</label>
+						<input type="text" name="name" required>
+					</div>
+					<div class="form_mail">
+						<label for="email">Votre email: </label>
+						<input type="email" name="email" required>
+					</div>
+					<div class="form-example">
+						<input type="submit" value="S'abonner!">
+					</div>
+
+				</form>
+			</div>
+			<div class="ticket_follow">
+				<h2>Social</h2>
+				<hr>
+				<a href="https://www.facebook.com"><img src="../ressources/contact/reseaux/logo-facebook.png" alt="logo_facebook" height="50px"></a>
+				<a href="https://www.instagram.com"><img src="../ressources/contact/reseaux/logo-insta.png" alt="logo_insta" height="50px"></a>
+				<a href="https://www.twitter.com"><img src="../ressources/contact/reseaux/logo-twitter.png" alt="logo_twitter" height="50px"></a>
+			</div>
+			<div class="passport">
+				<h1>PASSPORT</h1>
+				<div class="logo_monde">
+					<img src="../ressources/menu/logo_world.png" alt="Logo monde" height="100px">
+				</div>
+			</div>
+		</div>
+		<div class="footer_page">
+			<p>© Mon Voyage. Tous droits réservés.</p>
+		</div>
+	</footer>
 
 
 </body>
