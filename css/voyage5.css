@@ -1,0 +1,423 @@
+body
+{
+    margin: 0;
+    font-family: 'Domine', serif;
+}
+
+  /* accueil-image */
+  
+  .centered1 
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+  }
+
+ .accueil-container 
+ {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .imgaccueil
+  {
+      max-width: 100%;
+  }
+
+  /* Background-namibie */
+ 
+  .backgroundnamibie1
+  {
+      background-image: url(../ressources/Afrique/namibie/namibie.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+      max-width: 100%;
+      height: 800px;
+      font-size: 40px;
+      color: white;
+      padding: 30px;
+  }
+  .backgroundnamibie1 h2
+  {
+    font-size: 35px;
+  }
+
+
+  .backgroundnamibie h1
+  {
+      font-size: 70px;
+      text-align: center;
+      text-decoration: underline;
+  }
+
+  .textbutton-container h2
+  {
+      font-size: 20px;
+      color: white;
+      font-family: 'Old Standard TT', serif;
+  }
+
+  .textbutton-container a
+{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: 'Domine', serif;
+    font-size: 20px;
+    border-radius: 3px;
+
+}
+
+.textbutton-container a:hover
+{
+    background-color: yellow;
+    transition: 3s;
+}
+
+
+  .textbutton-container
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  hr
+  {
+      border: none;
+      border: 3px solid white;
+      border-radius: 3px;
+  }
+
+  .desert-container
+  {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .desert-container img
+  {
+      max-width: 30%;
+  }
+
+  .aventure
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 45px;
+  }
+
+  .aventure p
+ {
+    text-align: justify;
+    width: 40%;
+    color: white;
+    font-family: 'Old Standard TT', serif;
+ }
+
+ .aventure h1
+ {
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+ }
+
+ .smallarticle
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+    background-color: #CEAF75;
+ }
+
+ .smallarticle p
+ {
+    text-align: justify;
+    font-family: 'Old Standard TT', serif;
+ }
+ .smallarticle h1
+{
+  text-align: center;
+  color: white;
+}
+
+ .storytelling-container
+ {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .smallarticle a
+ {
+     background-color: #C48438;
+     padding: 10px;
+     color: white;
+     border-radius: 5px;
+     font-family: 'Old Standard TT', serif;
+     text-decoration: none;
+ }
+
+ .smallarticle a:hover
+ {
+     background-color: black;
+ }
+
+
+
+ /* Section-Tunisie */
+
+.backgroundtunisie
+ {
+     color: black;
+ }
+
+ .backgroundtunisie h1
+{
+    font-size: 70px;
+    text-align: center;
+    padding: 300px;
+}
+
+  
+.bottomleft {
+    position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 40px;
+  }
+
+ .tunisie-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .imgaccueil1
+  {
+      max-width: 100%;
+  }
+
+  .smallarticle1
+  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 45px;
+     background-color: rgb(0, 51, 218);
+  }
+ 
+  .smallarticle1 p
+  {
+     text-align: justify;
+     color: white;
+     font-family: 'Old Standard TT', serif;
+  }
+  .smallarticle1 h1
+ {
+   text-align: center;
+   color: white;
+   padding: 10px 10px;
+   border: 1px solid white;
+   border-radius: 5px;
+ }
+
+ .smallarticle1 a
+ {
+     background-color: rgb(73, 105, 250);
+     padding: 10px;
+     color: white;
+     border-radius: 5px;
+     text-decoration: none;
+ }
+
+ .smallarticle1 a:hover
+ {
+     background-color: rgb(223, 223, 43);
+ }
+
+ span
+ {
+     margin: 30px;
+     padding: 20px 10px ;
+     border-radius: 10px;
+     border: 5px solid white;
+     background-color: rgb(223, 223, 43);
+ }
+
+ span a
+ {
+    text-decoration: none;
+    color: white;
+ }
+
+ span:hover
+ {
+     background-color: rgb(131, 131, 27);
+ }
+
+ .activity-container
+ {
+     display: flex;
+     flex-direction: row;
+     padding: 30px;
+ }
+ .activity-container h2
+ {
+    border: 5px solid white;
+    background-color: rgb(95, 127, 233);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+ }
+
+.activity-container img
+{
+    max-width: 100%;
+    filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5); 
+    transition: 10s;
+}
+
+.save
+{
+    text-align: center;
+}
+.save a
+{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.save a:hover
+{
+    box-shadow:
+    1px 1px #53a7ea,
+    2px 2px #53a7ea,
+    3px 3px #53a7ea;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+}
+
+/* Table-Lists */
+
+.flextable-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+/* Lists */
+.uldescriptif-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+  background-color: rgb(0, 119, 255);
+  color: white;
+  margin: 30px;
+  border: 3px solid #53a7ea;
+}
+
+ul 
+{
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  padding-left: 2rem;
+  background-image: url(../ressources/Afrique/namibie/camel.png);
+  background-position: 0 0;
+  background-size: 1.3rem 1.3rem;
+  background-repeat: no-repeat;
+}
+
+/* Table */
+th, td
+{
+ padding: 10px;
+
+}
+
+.th-chine
+{
+  background-color: blue;
+  color: white;
+}
+.th-chine2
+{
+  background-color: rgb(0, 51, 218);
+  color: white;
+}
+.td-chine
+{
+  background-color: rgb(95, 127, 233);
+}
+.td-chine1
+{
+  background-color: #53a7ea;
+}
+
+.table-chine
+{
+  width: 650px;
+ 
+}
+.center-text h1, .center-text h2
+{
+  background-color: #53a7ea;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+}
+
+.center-text 
+{
+  background-color:  rgb(46, 46, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* Animation-slide */
+
+ @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 15s slidy infinite; 
+    }
+    
+  
