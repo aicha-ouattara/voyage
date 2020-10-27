@@ -5,8 +5,8 @@ body
 }
 
   /* accueil-image */
-  
-  .centered1 
+
+  .centered1
   {
     position: absolute;
     top: 50%;
@@ -15,7 +15,7 @@ body
     font-size: 250px;
   }
 
- .accueil-container 
+ .accueil-container
  {
     position: relative;
     text-align: center;
@@ -28,7 +28,7 @@ body
   }
 
   /* Background-namibie */
- 
+
   .backgroundnamibie1
   {
       background-image: url(../ressources/Afrique/namibie/namibie.jpg);
@@ -88,7 +88,7 @@ body
     align-items: center;
   }
 
-  hr
+main hr
   {
       border: none;
       border: 3px solid white;
@@ -187,7 +187,7 @@ body
     padding: 300px;
 }
 
-  
+
 .bottomleft {
     position: absolute;
   bottom: 8px;
@@ -214,7 +214,7 @@ body
      padding: 45px;
      background-color: rgb(0, 51, 218);
   }
- 
+
   .smallarticle1 p
   {
      text-align: justify;
@@ -283,7 +283,7 @@ body
 .activity-container img
 {
     max-width: 100%;
-    filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5); 
+    filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5);
     transition: 10s;
 }
 
@@ -333,12 +333,12 @@ transform: translateX(-3px);
   border: 3px solid #53a7ea;
 }
 
-ul 
+main ul
 {
   list-style-type: none;
 }
 
-li {
+main li {
   padding: 10px;
   padding-left: 2rem;
   background-image: url(../ressources/Afrique/namibie/camel.png);
@@ -376,7 +376,7 @@ th, td
 .table-chine
 {
   width: 650px;
- 
+
 }
 .center-text h1, .center-text h2
 {
@@ -386,7 +386,7 @@ th, td
   font-size: 17px;
 }
 
-.center-text 
+.center-text
 {
   background-color:  rgb(46, 46, 255);
   padding: 10px;
@@ -407,17 +407,15 @@ th, td
     95% { left: -300%; }
     100% { left: -400%; }
     }
-    
+
     div#slider { overflow: hidden; }
     div#slider figure img { width: 20%; float: left; }
-    div#slider figure { 
+    div#slider figure {
       position: relative;
       width: 500%;
       margin: 0;
       left: 0;
       text-align: left;
       font-size: 0;
-      animation: 15s slidy infinite; 
+      animation: 15s slidy infinite;
     }
-    
-  

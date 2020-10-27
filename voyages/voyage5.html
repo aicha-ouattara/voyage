@@ -7,6 +7,8 @@
 	<title>Afrique</title>
 	<link href="https://fonts.googleapis.com/css2?family=Domine&family=Old+Standard+TT&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/voyage5.css">
+	<link rel="stylesheet" href="../css/voyages.css">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
 </head>
 
 
@@ -14,6 +16,50 @@
 
 
 <body>
+	<header class="ticket">
+		<div class="div_logo">
+			<div class="rond_logo">
+				<img src="../ressources/menu/logo_avion.png" alt="Logo Avion" height="70px">
+			</div>
+		</div>
+		<div class="div_nav">
+			<nav class="ticket_gauche">
+				<h1>VOYAGEUR</h1>
+				<div class="choisir_voyageur">
+					<h2>CHOISIR</h2>
+					<ul class="hide">
+						<li><a href="voyage3.html#chine">Poumba</a></li>
+						<li><a href="voyage4.html#australie">Lolo</a></li>
+						<li><a href="voyage1.html#mexique">Pete</a></li>
+					</ul>
+				</div>
+
+				<h1>DESTINATION</h1>
+				<div class="choisir_destination">
+					<h2>CHOISIR</h2>
+					<ul class="hide">
+						<li><a href="voyage5.html">AFRIQUE</a></li>
+						<li><a href="voyage1.html">AMERIQUE</a></li>
+						<li><a href="voyage3.html">ASIE</a></li>
+						<li><a href="voyage2.html">EUROPE</a></li>
+						<li><a href="voyage4.html">OCEANIE</a></li>
+						<li><a href="../voyages.html">CARTE</a></li>
+					</ul>
+				</div>
+
+				<div class="ticket_gate">
+					<h1>GATE</h1>
+					<h3>13A</h3>
+				</div>
+			</nav>
+			<div class="ticket_droit">
+				<h1>BOARDING </h1>
+				<img src="../ressources/menu/logo_avion.png" alt="Logo Avion" height="20px">
+				<h1> PASS</h1>
+			</div>
+		</div>
+
+	</header>
 
 	<main>
 
@@ -25,7 +71,7 @@
 		</section>
 
 		<!-- Section-Mexique -->
-		<section class="namibie">
+		<section class="namibie" id="namibie">
 
 			<section class="backgroundnamibie">
 				<h1>NAMIBIE</h1>
@@ -159,7 +205,7 @@
 		<!-- End-Section-Namibie -->
 
 		<!-- Debut-Section-Tunise -->
-		<section class="tunisie">
+		<section class="tunisie" id="tunisie">
 			<section class="backgroundnamibie">
 				<h1>TUNISIE</h1>
 			</section>
@@ -302,6 +348,46 @@
 
 		<!-- End-Table -->
 	</main>
+
+	<footer>
+		<div class="passport_et_tickets">
+			<div class="ticket_news">
+				<h2>NewsLetter</h2>
+				<hr>
+				<p>Inscrivez vous pour suivre nos aventures!</p>
+				<form class="form_newsletter" action="" method="get">
+					<div class="form_name">
+						<label for="name">Votre Prénom:</label>
+						<input type="text" name="name" required>
+					</div>
+					<div class="form_mail">
+						<label for="email">Votre email: </label>
+						<input type="email" name="email" required>
+					</div>
+					<div class="form-example">
+						<input type="submit" value="S'abonner!">
+					</div>
+
+				</form>
+			</div>
+			<div class="ticket_follow">
+				<h2>Social</h2>
+				<hr>
+				<a href="https://www.facebook.com"><img src="../ressources/contact/reseaux/logo-facebook.png" alt="logo_facebook" height="50px"></a>
+				<a href="https://www.instagram.com"><img src="../ressources/contact/reseaux/logo-insta.png" alt="logo_insta" height="50px"></a>
+				<a href="https://www.twitter.com"><img src="../ressources/contact/reseaux/logo-twitter.png" alt="logo_twitter" height="50px"></a>
+			</div>
+			<div class="passport">
+				<h1>PASSPORT</h1>
+				<div class="logo_monde">
+					<img src="../ressources/menu/logo_world.png" alt="Logo monde" height="100px">
+				</div>
+			</div>
+		</div>
+		<div class="footer_page">
+			<p>© Mon Voyage. Tous droits réservés.</p>
+		</div>
+	</footer>
 
 </body>
 

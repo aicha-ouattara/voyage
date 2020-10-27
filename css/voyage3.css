@@ -12,7 +12,7 @@ body
     flex-direction: row;
 }
 
-img
+main img
 {
     max-width: 100%;
     display: block;
@@ -35,7 +35,7 @@ img
   .container:hover .overlay {
     opacity: 1;
   }
-  
+
   .text {
     color: white;
     font-size: 200px;
@@ -54,7 +54,7 @@ img
   }
 
   /* accueil-image */
-  
+
   .centered1 {
     position: absolute;
     top: 50%;
@@ -118,7 +118,7 @@ img
      color: white;
      background-color: red;
  }
-hr
+main hr
 {
     width: 400px;
     border: none;
@@ -140,15 +140,15 @@ hr
 
   }
 
-  @keyframes glow 
+  @keyframes glow
   {
       from { filter: drop-shadow(0 0 5px red);
-      
+
       }
 
       to{
           filter: drop-shadow(0 0 10px yellow);
-      } 
+      }
   }
 
   .lantern1
@@ -181,7 +181,7 @@ hr
               transform: translateY(-100px);
     }
   }
-  
+
 
   /* Page-Corea */
 
@@ -198,13 +198,13 @@ hr
   background-color: tomato;
   padding: 20px;
 }
- 
+
  .story1 p
  {
     text-align: justify;
  }
 
-.coreeimg-container 
+.coreeimg-container
 {
     max-width: 20%;
     display: flex;
@@ -241,7 +241,7 @@ hr
 }
 
 
-a
+main a
 {
     text-decoration: none;
     padding-bottom: 10px;
@@ -251,7 +251,7 @@ a
     border-radius: 5px;
 }
 
-a:hover
+main a:hover
 {
     background-color: salmon;
 
@@ -281,12 +281,12 @@ a:hover
   border: 3px dotted red;
 }
 
-ul 
+main ul
 {
   list-style-type: none;
 }
 
-li {
+main li {
   padding: 10px;
   padding-left: 2rem;
   background-image: url(../ressources/asie/chine/star.png);
@@ -322,7 +322,7 @@ th, td
 .table-chine
 {
   width: 650px;
- 
+
 }
 .center-text h1, .center-text h2
 {
@@ -332,7 +332,7 @@ th, td
   border: 3px dotted black;
 }
 
-.center-text 
+.center-text
 {
   border: 3px dotted red;
   padding: 10px;

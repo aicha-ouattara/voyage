@@ -4,7 +4,7 @@
       font-family: 'Alegreya Sans SC', sans-serif;
   }
   /* accueil-image */
-  
+
   .centered1 {
     position: absolute;
     top: 50%;
@@ -42,7 +42,7 @@
     font-family: 'Roboto', sans-serif;
   }
   .mex-colunm h1
-  { 
+  {
   font-size: 20px;
   color: violet;
   text-decoration: underline;
@@ -73,12 +73,12 @@
   }
 
 
- .scroller-container 
+ .scroller-container
 {
     height: 440px;
     overflow-y: scroll;
     border: 5px solid blueviolet;
- 
+
 }
 video
 {
@@ -229,7 +229,7 @@ video
   {
       text-align: justify;
       padding: 30px;
-     
+
   }
 
 /* Animations */
@@ -293,12 +293,12 @@ video
   font-family: 'Roboto', sans-serif;
 }
 
-ul 
+main ul
 {
   list-style-type: none;
 }
 
-li {
+main li {
   padding: 10px;
   padding-left: 2rem;
   background-image: url(../ressources/mexique/sombrero.png);
@@ -311,7 +311,7 @@ li {
 th, td
 {
  padding: 10px;
- 
+
 }
 
 .th-chine
@@ -335,7 +335,7 @@ th, td
 .table-chine
 {
   width: 650px;
- 
+
 }
 .center-text h1, .center-text h2
 {
@@ -344,7 +344,7 @@ th, td
   color: white;
 }
 
-.center-text 
+.center-text
 {
   background-color: rgb(120, 12, 221);
   padding: 10px;
