@@ -64,8 +64,10 @@ body{
     position: relative;
   width: 34.9%;
   height: 375px;
-    border: 1px solid #838383;
+
 }
+
+
 
 .boxaus:hover .click {
     opacity: 1; /*le texte passe à opacity 1 et devient visible*/
@@ -411,10 +413,9 @@ body{
     bottom: 0;
     margin: auto;
     text-align: center;
-    z-index: 10;
-    color: white;
-    background-color: #6fad6d;
-    font-size: 1em;
+    z-index: 0;
+    color: black;
+    font-size: 2em;
     font-family: "Lucida Console", Courier, monospace;
     opacity: 0; /*opacity 0 car le texte ne doit pas être affiché avant le hover*/
 }
@@ -440,9 +441,9 @@ body{
 
 .box {
     position: relative;
-  width: 39.5%;
+  width: 34%;
   height: 375px;
-    border: 1px solid #838383;
+
 }
 
 .container-begin{
