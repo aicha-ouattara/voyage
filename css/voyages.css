@@ -37,7 +37,7 @@ header:hover{
 	left: 0;
 }
 
-.ticket .div_logo{
+header .div_logo{
 	height: 30%;
 	background-color: red;
 	border-radius: 0px 10px 0px 0px;
@@ -46,13 +46,13 @@ header:hover{
 	align-items: center;
 }
 
-.rond_logo{
+header .rond_logo{
 	align-content: center;
 	background-color: white;
 	border-radius: 200px;
 }
 
-.div_nav{
+header .div_nav{
 	position: relative;
 	height: 70%;
 	width: 100%;
@@ -62,13 +62,122 @@ header:hover{
 	justify-content: space-between;
 }
 
-.ticket_gauche{
+header nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
-.ticket_gauche h1{
+header nav h1{
+	font-family: monospace;
+}
+
+header nav .choisir_voyageur h2{
+	color: white;
+	background-color: red;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.3em;
+}
+
+header nav .choisir_voyageur{
+	position: absolute;
+	top: 35px;
+	left: 25px;
+	height: 20px;
+	width: 90px;
+	border: 1px dashed black;
+	text-align: center;
+	line-height: 20px;
+}
+
+header nav .choisir_voyageur .hide{
+	display: none
+}
+
+header nav .choisir_voyageur:hover .hide{
+	position: absolute;
+	top: 5px;
+	left: -41px;
+	display: block;
+	z-index: 30;
+}
+
+header nav .choisir_destination{
+	position: absolute;
+	top: 85px;
+	left: 25px;
+	height: 20px;
+	width: 90px;
+	border: 1px dashed black;
+	text-align: center;
+	line-height: 20px;
+}
+
+header nav .choisir_destination h2{
+	color: white;
+	background-color: red;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.3em;
+}
+
+header nav .choisir_destination .hide{
+	display: none
+}
+
+header nav .choisir_destination:hover .hide{
+	position: absolute;
+	top: 5px;
+	left: -41px;
+	display: block;
+}
+
+nav ul{
+	list-style: none;
+	width: auto;
+}
+
+nav ul li{
+	width: 90px;
+	height: 20px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-family: monospace;
+}
+
+/* header nav .choisir .hide{
+
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+} */
+
+
+
+/*
+header nav form{
+	width:80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header nav form label{
+	color: grey;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	margin-top: 10px;
+}
+ */
+
+header nav h1{
 	font-size: 10px;
 	margin: 0;
 	margin-top: 6px;
@@ -76,16 +185,24 @@ header:hover{
 	color: grey;
 }
 
-.ticket_gauche h2{
+header nav h2{
 	font-size: 10px;
 	margin: 0;
 	padding-left: 10px;
 	color: black;
 }
 
+header nav .ticket_gate h3{
+	font-size: 30px;
+	text-align: center;
+	padding-right: 20px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: 1px dashed grey;
+	border-radius: 6px;
+}
 
-
-.ticket_droit{
+header .div_nav .ticket_droit{
 	position: absolute;
 	left:-6px;
 	top: 40px;
@@ -99,26 +216,19 @@ header:hover{
 	font-size: 20px;
 }
 
-.ticket_droit img{
+header .div_nav .ticket_droit img{
 	transform: rotate(45deg);
 }
 
-.ticket_droit h1{
+header .div_nav .ticket_droit h1{
 	color: grey;
 	font-size: 20px;
 }
 
-.ticket_gate h3{
-	font-size: 30px;
-	text-align: center;
-	margin-left: 25px;
-	margin-bottom: 10px;
-	border: 1px dashed grey;
-	border-radius: 6px;
-}
 
 
 .accueil{
+	overflow-x: hidden;
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -311,8 +421,8 @@ _______________________________ */
 .continent_afrique:hover .img_continent{
 	visibility: visible;
 	opacity: 1;
-	filter: hue-rotate(120deg);
-	-webkit-filter: hue-rotate(120deg);
+	filter: hue-rotate(210deg);
+	-webkit-filter: hue-rotate(210deg);
 }
 
 .img_afrique{
@@ -419,8 +529,8 @@ _______________________________ */
 .continent_europe:hover .img_continent{
 	visibility: visible;
 	opacity: 1;
-	filter: hue-rotate(120deg);
-	-webkit-filter: hue-rotate(120deg);
+	filter: hue-rotate(250deg);
+	-webkit-filter: hue-rotate(250deg);
 }
 
 .img_europe{
@@ -540,8 +650,8 @@ _______________________________ */
 .continent_asie:hover .img_continent{
 	visibility: visible;
 	opacity: 1;
-	filter: hue-rotate(120deg);
-	-webkit-filter: hue-rotate(120deg);
+	filter: hue-rotate(170deg);
+	-webkit-filter: hue-rotate(170deg);
 }
 
 .img_asie{
@@ -660,8 +770,8 @@ _______________________________ */
 .continent_oceanie:hover .img_continent{
 	visibility: visible;
 	opacity: 1;
-	filter: hue-rotate(120deg);
-	-webkit-filter: hue-rotate(120deg);
+	filter: hue-rotate(350deg);
+	-webkit-filter: hue-rotate(350deg);
 }
 
 .img_oceanie{
@@ -780,8 +890,8 @@ _______________________________ */
 .continent_amerique:hover .img_continent{
 	visibility: visible;
 	opacity: 1;
-	filter: hue-rotate(120deg);
-	-webkit-filter: hue-rotate(120deg);
+	filter: hue-rotate(90deg);
+	-webkit-filter: hue-rotate(90deg);
 }
 
 .img_amerique{
@@ -869,7 +979,7 @@ _______________________________ */
 
 .profils{
 	position: relative;
-	height: 400px;
+	height: 500px;
 	width: 1000px;
 }
 
@@ -1084,6 +1194,7 @@ _______________________________ */
 	background-color: white;
 	padding: 10px;
 	padding-bottom: 40px;
+	filter: grayscale(0.3);
 }
 
 .profils .voyageur_3 .polaroid h1{
@@ -1106,4 +1217,134 @@ _______________________________ */
 	color: #1717ED;
 	transform: rotate(0deg);
 	z-index: 1;
+}
+
+/* _______________________________
+------------	FOOTER	----------
+_______________________________ */
+footer .passport_et_tickets{
+	transform: rotate(-5deg);
+	height: 330px;
+	width: 220px;
+	position: fixed;
+	bottom: -260px;
+	right: 300px;
+	/* border: 1px solid grey; */
+	z-index: 8;
+}
+
+footer .passport_et_tickets:hover{
+	transition: bottom 0.3s ease;
+	bottom: -100px;
+	right: 300px;
+}
+
+footer .passport{
+	position: absolute;
+	height: 300px;
+	width: 220px;
+	top: 30px;
+	left: 0px;
+	background-color: #712929;
+	border-radius: 0 20px 20px 0;
+	z-index: 16;
+}
+
+footer .passport .logo_monde{
+	border-radius: 200px;
+	background-color: #F8CC42;
+	height: 150px;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border: 1px solid black;
+}
+
+footer .passport .logo_monde img{
+	display: block;
+	padding-top: 23px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer .passport h1{
+	margin-top: 4px;
+	text-align: center;
+	font-size: 1.6em;
+	color: #F8CC42;
+	text-decoration: underline;
+}
+
+footer .passport_et_tickets .ticket_news{
+	position: absolute;
+	top: -20px;
+	left: 10px;
+	padding: 0;
+	background-color: #FFFCF3;
+	width: 200px;
+	height: 250px;
+	z-index: 1;
+	text-align: center;
+	border: 1px solid grey;
+	border-radius: 10px;
+	font-family: monospace;
+	font-size: 0.8em;
+}
+
+footer .passport_et_tickets .ticket_news h2{
+	font-family: 'Libre Barcode 128 Text';
+	font-size: 2em;
+	margin-top: 7px;
+}
+
+footer .passport_et_tickets .ticket_news:hover{
+	transition: top 0.3s ease;
+	top: -170px;
+
+}
+
+footer .passport_et_tickets .ticket_follow{
+	transform: rotate(10deg);
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	padding: 0;
+	background-color: #FFFCF3;
+	width: 80px;
+	height: 250px;
+	z-index: 1;
+	text-align: center;
+	border: 1px solid grey;
+	border-radius: 10px;
+	font-family: monospace;
+	font-size: 0.8em;
+}
+
+footer .passport_et_tickets .ticket_follow h2{
+	font-family: 'Libre Barcode 128 Text';
+	font-size: 2em;
+	margin-top: 7px;
+}
+
+footer .passport_et_tickets .ticket_follow:hover{
+	transition: left 0.3s ease;
+	left: 200px;
+
+}
+
+
+footer .footer_page{
+	margin: 0;
+	padding: 0;
+	line-height: 70px;
+	text-align: center;
+	height: 70px;
+	background-color: grey;
+	color: white;
+	font-family: monospace;
+}
+
+footer .footer_page p{
+	margin: 0;
 }

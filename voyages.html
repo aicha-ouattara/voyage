@@ -14,23 +14,35 @@
 				</div>
 			</div>
 			<div class="div_nav">
-				<div class="ticket_gauche">
-					<div class="ticket_nom">
-						<h1>NAME</h1>
-						<h2>JOHN DOE</h2>
-					</div>
-					<div class="ticket_continent">
-						<h1>CONTINENT</h1>
+				<nav class="ticket_gauche">
+					<h1>VOYAGEUR</h1>
+					<div class="choisir_voyageur">
+						<h2>CHOISIR</h2>
+						<ul class="hide">
+							<li><a href="afrique.html">Poumba</a></li>
+							<li><a href="amerique.html">Lolo</a></li>
+							<li><a href="europe.html">Pete</a></li>
+						</ul>
 					</div>
 
-					<div class="ticket_pays">
-						<h1>PAYS</h1>
+					<h1>DESTINATION</h1>
+					<div class="choisir_destination">
+						<h2>CHOISIR</h2>
+						<ul class="hide">
+							<li><a href="europe.html">AFRIQUE</a></li>
+							<li><a href="afrique.html">AMERIQUE</a></li>
+							<li><a href="amerique.html">ASIE</a></li>
+							<li><a href="europe.html">EUROPE</a></li>
+							<li><a href="europe.html">OCEANIE</a></li>
+							<li><a href="europe.html">CARTE</a></li>
+						</ul>
 					</div>
+
 					<div class="ticket_gate">
 						<h1>GATE</h1>
 						<h3>13A</h3>
 					</div>
-				</div>
+				</nav>
 				<div class="ticket_droit">
 					<h1>BOARDING </h1>
 					<img src="ressources/menu/logo_avion.png" alt="Logo Avion" height="20px">
@@ -215,7 +227,43 @@
 		</main>
 
 		<footer>
-			<p>Ceci est le footer</p>
+			<div class="passport_et_tickets">
+				<div class="ticket_news">
+					<h2>NewsLetter</h2>
+					<hr>
+					<p>Inscrivez vous pour suivre nos aventures!</p>
+					<form class="form_newsletter" action="" method="get">
+						<div class="form_name">
+							<label for="name">Votre Prénom:</label>
+							<input type="text" name="name" required>
+						</div>
+						<div class="form_mail">
+							<label for="email">Votre email: </label>
+							<input type="email" name="email" required>
+						</div>
+						<div class="form-example">
+							<input type="submit" value="S'abonner!">
+						</div>
+
+					</form>
+				</div>
+				<div class="ticket_follow">
+					<h2>Social</h2>
+					<hr>
+					<a href="https://www.facebook.com"><img src="ressources/contact/reseaux/logo-facebook.png" alt="logo_facebook" height="50px"></a>
+					<a href="https://www.instagram.com"><img src="ressources/contact/reseaux/logo-insta.png" alt="logo_insta" height="50px"></a>
+					<a href="https://www.twitter.com"><img src="ressources/contact/reseaux/logo-twitter.png" alt="logo_twitter" height="50px"></a>
+				</div>
+				<div class="passport">
+					<h1>PASSPORT</h1>
+					<div class="logo_monde">
+						<img src="ressources/menu/logo_world.png" alt="Logo monde" height="100px">
+					</div>
+				</div>
+			</div>
+			<div class="footer_page">
+				<p>© Mon Voyage. Tous droits réservés.</p>
+			</div>
 		</footer>
 	</body>
 </html>
